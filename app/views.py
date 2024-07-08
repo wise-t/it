@@ -33,3 +33,6 @@ def team(request):
 
 def testimonial(request):
     return render(request, 'testimonial.html')
+
+def _404_ (request):
+    return render(request, '404.html')

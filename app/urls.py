@@ -3,7 +3,7 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 from .import views
-from app.views import home,About,service,project,contact,blog,team
+from app.views import home,About,service,project,contact,blog,team,_404_,testimonial
 from django.contrib.auth import views as auth_view
 # from .forms import MyPasswordChangeForm, MySetPasswordForm,MyPasswordResetForm
 urlpatterns = [
@@ -16,6 +16,7 @@ urlpatterns = [
     path('contact/', contact, name='contact'),
     path('blog/', blog, name='blog'),
     path('team/', team, name='team'),
-    path('testimonial/', team, name='testimonial'),
+    path('404/', _404_, name='404'),
+    path('testimonial/', testimonial, name='testimonial'),
 
 ]
